@@ -1,0 +1,4 @@
+/* XP Tetris styles - matches win98 Luna */
+.tetris-wrap { background:#ece9d8; }
+.board-outer { background:#000; border:2px inset #7f9db9; }
+.cell.filled.cyan { background:#00e5e5; }

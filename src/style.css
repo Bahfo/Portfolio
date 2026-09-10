@@ -1,0 +1,50 @@
+/* Global XP Styles - extracted to src/style.css */
+* {
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+#app {
+  height: 100vh;
+  width: 100vw;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.desktop {
+  width: 100vw;
+  height: calc(100vh - 32px);
+  background: #008080
+    url('https://upload.wikimedia.org/wikipedia/en/2/27/Bliss_%28Windows_XP%29.png')
+    no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 10px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .desktop {
+    height: calc(100vh - 40px);
+    flex-direction: row;
+    align-content: flex-start;
+    gap: 12px;
+  }
+}
